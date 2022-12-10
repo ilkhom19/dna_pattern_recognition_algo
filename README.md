@@ -24,15 +24,9 @@ CGGTGGCGGA<br />
 
 * ### Output:
 
-The sequence: 'CCGCTGTGCC' not found
-
-The sequence: 'CATCCTAGTA' not found
-
-The sequence: 'GCCATCAACA' found at the position: 667
-
-The sequence: 'CTATGACCCT' not found
-
-The sequence: 'GGTAAGAGTA' found at the position: 609
-
-The sequence: 'CGGTGGCGGA' not found
-
+The sequence: 'CCGCTGTGCC' not found<br />
+The sequence: 'CATCCTAGTA' not found<br />
+The sequence: 'GCCATCAACA' found at the position: 667<br />
+The sequence: 'CTATGACCCT' not found<br />
+The sequence: 'GGTAAGAGTA' found at the position: 609<br />
+The sequence: 'CGGTGGCGGA' not found<br />
