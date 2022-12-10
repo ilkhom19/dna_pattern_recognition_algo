@@ -37,7 +37,7 @@ void hashFunction(string text)
 
 
 
-bool doesDatasetHave(string query)
+int doesDatasetHave(string query)
 {
     int i, j, localHash = 0;
 
@@ -55,12 +55,11 @@ bool doesDatasetHave(string query)
                     break;
             }
             if (j == queryLength)
-                return true;
-
+                return i;
         }
     }
 
-    return false;
+    return -1;
 }
 
 
@@ -84,9 +83,10 @@ int main()
     // look for a query in the dataset
     for(int i=1; i<=numberOfQueries; i++){
         query = queries[i];
-        if(doesDatasetHave(query))
-            cout << "The sequence: '" << query  << "' is present in the dataset ! "<< "\n";
+        int index = doesDatasetHave(query);
+        if( index != -1)
+            cout << "The sequence: '" << query  << "' found at the position: " << index+1<< "\n";
         else
-            cout << "The sequence: '" << query  << "' not found! "<< "\n";
+            cout << "The sequence: '" << query  << "' not found"<< "\n";
     }
 }
