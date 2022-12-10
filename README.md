@@ -1,4 +1,4 @@
-# Matching Genetic Sequences Through the Karp-Rabin Algorithm.
+# Fast Substring Matching Algorithm.
 The Karp-Rabin algorithm aims to use skillful modulo and arithmetic operations as well as hashing functions to decrease the time complexity of matching exact nucleotide sequences to the human genome.
 
 ### Input to the algorithm:
