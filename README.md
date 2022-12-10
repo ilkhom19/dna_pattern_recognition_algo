@@ -1,5 +1,5 @@
 # Fast Substring Matching Algorithm.
-The Karp-Rabin algorithm aims to use skillful modulo and arithmetic operations as well as hashing functions to decrease the time complexity of matching exact nucleotide sequences to the human genome.
+The Karp-Rabin algorithm aims to use skillful modulo and arithmetic operations as well as hashing functions to decrease the time complexity of matching exact substring of the text. Here the application with Matching DNA sequences
 
 ### Input to the algorithm:
 
