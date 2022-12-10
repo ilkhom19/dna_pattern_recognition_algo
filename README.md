@@ -1,7 +1,7 @@
-# Fast Substring Matching Algorithm.
-The Karp-Rabin algorithm aims to use skillful modulo and arithmetic operations as well as hashing functions to decrease the time complexity of matching exact substring of the text. Here the application with Matching DNA sequences
+# Substring Matching Algorithm in O(n) time.
+The Karp-Rabin algorithm aims to use skillful modulo and arithmetic operations as well as hashing functions to decrease the time complexity of matching exact substring of the text. Here is the application in Genetics: Looking for DNA sequnces in the precalculated Data Set of DNA sequence
 
-### Input to the algorithm:
+### Input:
 
 * The first line of the input contains the long DNA Sequence.The DNA Sequence cannot be empty. 
 * The next line contains two integers 1 <= N <= 1000 and 1 <= L <= 1000 representing the number of short DNA queries in the predefined set and their length. 
