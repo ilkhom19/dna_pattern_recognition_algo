@@ -67,13 +67,15 @@ int doesDatasetHave(string query)
 int main()
 {
 
+    clock_t start, end;
+    start = clock();
     // getting the input
-    getline(cin, baseString);
+    cin >> baseString;
     cin >> numberOfQueries >> queryLength;
     baseStringLength =  (int)baseString.size();
 
-    for(int i = 0; i <= numberOfQueries; i++){
-        getline(cin, query);
+    for(int i = 0; i < numberOfQueries; i++){
+        cin >> query ;
         queries.push_back(query);
     }
 
@@ -81,7 +83,7 @@ int main()
     hashFunction(baseString);
 
     // look for a query in the dataset
-    for(int i=1; i<=numberOfQueries; i++){
+    for(int i=0; i<numberOfQueries; i++){
         query = queries[i];
         int index = doesDatasetHave(query);
         if( index != -1)
@@ -89,4 +91,9 @@ int main()
         else
             cout << "The sequence: '" << query  << "' not found"<< "\n";
     }
+
+    end = clock();
+    double time_taken = double(end - start) / double(CLOCKS_PER_SEC);
+    cout << "Time taken by program is : " << fixed << time_taken*1000 << setprecision(0);
+    cout << " ms " << endl;
 }
